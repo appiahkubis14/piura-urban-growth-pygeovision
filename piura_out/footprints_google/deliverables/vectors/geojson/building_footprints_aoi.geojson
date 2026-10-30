@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "building_footprints_aoi",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"xy_coordinate_resolution": 1e-06,
+"features": [
+{ "type": "Feature", "properties": { "pipeline": "building_footprints", "title": "Building Footprints", "period": "n/a (published dataset)", "area_km2": 2.759, "generated": "2026-10-30" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -80.61, -5.18 ], [ -80.61, -5.165 ], [ -80.625, -5.165 ], [ -80.625, -5.18 ], [ -80.61, -5.18 ] ] ] } }
+]
+}

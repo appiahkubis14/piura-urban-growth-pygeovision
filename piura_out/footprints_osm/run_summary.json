@@ -1,0 +1,120 @@
+{
+  "pygeovision_version": "2.2.0",
+  "generated_utc": "2026-10-30T07:12:49+00:00",
+  "pipeline": "building_footprints",
+  "title": "Building Footprints",
+  "success": true,
+  "bbox": [
+    -80.625,
+    -5.18,
+    -80.61,
+    -5.165
+  ],
+  "aoi_area_km2": 2.7586,
+  "period": "n/a (published dataset)",
+  "output_path": "piura_out/footprints_osm/building_density.tif",
+  "duration_seconds": 32.6950306892395,
+  "parameters": {
+    "source": "osm",
+    "cell_m": 100
+  },
+  "metadata": {
+    "date": "n/a (published dataset)",
+    "crs": "EPSG:32717",
+    "vector_files": [
+      {
+        "name": "buildings",
+        "path": "/home/samuel-appiah-kubi/Desktop/main/PLUS/GeoHumanitarian Action/GeohumAssignment2_Samuel_Appiah_Kubi_package/piura_out/footprints_osm/building_footprints.gpkg"
+      }
+    ]
+  },
+  "stats": {
+    "source": "osm",
+    "source_note": "OpenStreetMap: volunteered data. Completeness varies a great deal between places -- good in many towns, thin in rural areas; buildings mapped as multipolygon relations are not included.",
+    "building_count": 321,
+    "building_area_ha": 9.679039999999999,
+    "building_coverage": 0.03511377472090731,
+    "buildings_per_km2": 116.45288877214321,
+    "mean_building_area_m2": 301.5277258566978,
+    "median_building_area_m2": 176.99,
+    "aoi_area_km2": 2.7564794947086506,
+    "cell_m": 100,
+    "max_cell_coverage": 0.4725779891014099,
+    "footprints_file": "piura_out/footprints_osm/building_footprints.gpkg"
+  },
+  "layers": [
+    {
+      "key": "density",
+      "title": "Share of each cell covered by buildings",
+      "file": "piura_out/footprints_osm/building_density.tif",
+      "kind": "continuous",
+      "classes": [],
+      "summary": {
+        "n_valid": 272,
+        "n_total": 306,
+        "valid_fraction": 0.8888888888888888,
+        "min": 0.0,
+        "max": 0.4725779891014099,
+        "mean": 0.03431962871828171,
+        "std": 0.07729729905072015,
+        "p2": 0.0,
+        "p5": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.02783525036647916,
+        "p95": 0.1930038489401338,
+        "p98": 0.30890879571437785
+      }
+    },
+    {
+      "key": "count",
+      "title": "Buildings per cell",
+      "file": "piura_out/footprints_osm/building_count.tif",
+      "kind": "continuous",
+      "classes": [],
+      "summary": {
+        "n_valid": 272,
+        "n_total": 306,
+        "valid_fraction": 0.8888888888888888,
+        "min": 0.0,
+        "max": 12.0,
+        "mean": 1.099264705882353,
+        "std": 2.169575599713449,
+        "p2": 0.0,
+        "p5": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 1.0,
+        "p95": 6.0,
+        "p98": 8.0
+      }
+    }
+  ],
+  "deliverables": {
+    "directory": "piura_out/footprints_osm/deliverables",
+    "reports": {
+      "pdf": "piura_out/footprints_osm/deliverables/building_footprints_report.pdf",
+      "xlsx": "piura_out/footprints_osm/deliverables/building_footprints_report.xlsx",
+      "docx": "piura_out/footprints_osm/deliverables/building_footprints_report.docx"
+    },
+    "maps": [
+      "piura_out/footprints_osm/deliverables/maps/building_footprints_map.png",
+      "piura_out/footprints_osm/deliverables/maps/building_footprints_map_count.png"
+    ],
+    "charts": [
+      "piura_out/footprints_osm/deliverables/maps/building_footprints_histogram.png"
+    ],
+    "vectors": {
+      "gpkg": [
+        "piura_out/footprints_osm/deliverables/vectors/building_footprints.gpkg"
+      ],
+      "geojson": [
+        "piura_out/footprints_osm/deliverables/vectors/geojson/building_footprints_aoi.geojson",
+        "piura_out/footprints_osm/deliverables/vectors/geojson/building_footprints_buildings.geojson"
+      ]
+    },
+    "summary_json": null,
+    "warnings": []
+  },
+  "deliverables_seconds": 1.04
+}

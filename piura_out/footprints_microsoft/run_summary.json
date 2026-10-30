@@ -1,0 +1,122 @@
+{
+  "pygeovision_version": "2.2.0",
+  "generated_utc": "2026-10-30T07:12:11+00:00",
+  "pipeline": "building_footprints",
+  "title": "Building Footprints",
+  "success": true,
+  "bbox": [
+    -80.625,
+    -5.18,
+    -80.61,
+    -5.165
+  ],
+  "aoi_area_km2": 2.7586,
+  "period": "n/a (published dataset)",
+  "output_path": "piura_out/footprints_microsoft/building_density.tif",
+  "duration_seconds": 3.333548069000244,
+  "parameters": {
+    "source": "microsoft",
+    "cell_m": 100
+  },
+  "metadata": {
+    "date": "n/a (published dataset)",
+    "crs": "EPSG:32717",
+    "vector_files": [
+      {
+        "name": "buildings",
+        "path": "/home/samuel-appiah-kubi/Desktop/main/PLUS/GeoHumanitarian Action/GeohumAssignment2_Samuel_Appiah_Kubi_package/piura_out/footprints_microsoft/building_footprints.gpkg"
+      }
+    ]
+  },
+  "stats": {
+    "source": "microsoft",
+    "source_note": "Microsoft Global ML Building Footprints: machine-learning detections on Bing/Maxar/Vexcel imagery of various dates (about 1% false positives reported by the project); building heights where available.",
+    "building_count": 604,
+    "building_area_ha": 13.827287,
+    "building_coverage": 0.0501628509355608,
+    "buildings_per_km2": 219.1200773158084,
+    "mean_building_area_m2": 228.9285927152318,
+    "median_building_area_m2": 141.04500000000002,
+    "aoi_area_km2": 2.7564794947086506,
+    "cell_m": 100,
+    "max_cell_coverage": 0.41284099221229553,
+    "footprints_file": "piura_out/footprints_microsoft/building_footprints.gpkg",
+    "buildings_with_height": 0,
+    "mean_height_m": null
+  },
+  "layers": [
+    {
+      "key": "density",
+      "title": "Share of each cell covered by buildings",
+      "file": "piura_out/footprints_microsoft/building_density.tif",
+      "kind": "continuous",
+      "classes": [],
+      "summary": {
+        "n_valid": 272,
+        "n_total": 306,
+        "valid_fraction": 0.8888888888888888,
+        "min": 0.0,
+        "max": 0.41284099221229553,
+        "mean": 0.046432628474362636,
+        "std": 0.08909544054020946,
+        "p2": 0.0,
+        "p5": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 0.04464324936270714,
+        "p95": 0.2834122538566589,
+        "p98": 0.33192043125629417
+      }
+    },
+    {
+      "key": "count",
+      "title": "Buildings per cell",
+      "file": "piura_out/footprints_microsoft/building_count.tif",
+      "kind": "continuous",
+      "classes": [],
+      "summary": {
+        "n_valid": 272,
+        "n_total": 306,
+        "valid_fraction": 0.8888888888888888,
+        "min": 0.0,
+        "max": 21.0,
+        "mean": 2.0220588235294117,
+        "std": 3.7729043886575706,
+        "p2": 0.0,
+        "p5": 0.0,
+        "p25": 0.0,
+        "median": 0.0,
+        "p75": 2.0,
+        "p95": 11.449999999999989,
+        "p98": 14.579999999999984
+      }
+    }
+  ],
+  "deliverables": {
+    "directory": "piura_out/footprints_microsoft/deliverables",
+    "reports": {
+      "pdf": "piura_out/footprints_microsoft/deliverables/building_footprints_report.pdf",
+      "xlsx": "piura_out/footprints_microsoft/deliverables/building_footprints_report.xlsx",
+      "docx": "piura_out/footprints_microsoft/deliverables/building_footprints_report.docx"
+    },
+    "maps": [
+      "piura_out/footprints_microsoft/deliverables/maps/building_footprints_map.png",
+      "piura_out/footprints_microsoft/deliverables/maps/building_footprints_map_count.png"
+    ],
+    "charts": [
+      "piura_out/footprints_microsoft/deliverables/maps/building_footprints_histogram.png"
+    ],
+    "vectors": {
+      "gpkg": [
+        "piura_out/footprints_microsoft/deliverables/vectors/building_footprints.gpkg"
+      ],
+      "geojson": [
+        "piura_out/footprints_microsoft/deliverables/vectors/geojson/building_footprints_aoi.geojson",
+        "piura_out/footprints_microsoft/deliverables/vectors/geojson/building_footprints_buildings.geojson"
+      ]
+    },
+    "summary_json": null,
+    "warnings": []
+  },
+  "deliverables_seconds": 1.27
+}

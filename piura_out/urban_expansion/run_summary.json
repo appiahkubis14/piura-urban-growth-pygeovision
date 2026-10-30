@@ -1,0 +1,124 @@
+{
+  "pygeovision_version": "2.2.0",
+  "generated_utc": "2026-10-30T07:15:35+00:00",
+  "pipeline": "urban_expansion",
+  "title": "Urban Expansion (annual 10 m land cover)",
+  "success": true,
+  "bbox": [
+    -80.625,
+    -5.18,
+    -80.61,
+    -5.165
+  ],
+  "aoi_area_km2": 2.7586,
+  "period": "2020 to 2023",
+  "output_path": "piura_out/urban_expansion/built_area_change.tif",
+  "duration_seconds": 1.824347734451294,
+  "parameters": {
+    "date_before": "2020",
+    "date_after": "2023"
+  },
+  "metadata": {
+    "date_before": "2020",
+    "date_after": "2023",
+    "tiles_before": [
+      "60M-2020",
+      "17M-2020"
+    ],
+    "tiles_after": [
+      "60M-2023",
+      "17M-2023"
+    ],
+    "crs": "EPSG:32717"
+  },
+  "stats": {
+    "year_before": 2020,
+    "year_after": 2023,
+    "built_area_ha_before": 172.06,
+    "built_area_ha_after": 177.66,
+    "gain_ha": 16.77,
+    "loss_ha": 11.17,
+    "net_change_ha": 5.599999999999994,
+    "built_share_before": 0.6132734530938124,
+    "built_share_after": 0.6332335329341318,
+    "annual_growth_rate": 0.010733312497621439,
+    "valid_fraction": 1.0,
+    "resolution_m": 10.0,
+    "resolution_coarsened": false,
+    "product_note": "Impact Observatory / Esri 10 m Annual Land Use Land Cover (v02, Sentinel-2 based, CC BY 4.0). Each year is classified independently, so a year-to-year difference contains classifier disagreement as well as real change; single-pixel flips are expected."
+  },
+  "layers": [
+    {
+      "key": "built",
+      "title": "Built-up area change",
+      "file": "piura_out/urban_expansion/built_area_change.tif",
+      "kind": "classes",
+      "classes": [
+        {
+          "value": 0,
+          "name": "Not built",
+          "color": "#d9dee3",
+          "pixels": 9173,
+          "area_ha": 91.73000000000499,
+          "share": 0.3269532363843851,
+          "share_aoi": 0.3269532363843919
+        },
+        {
+          "value": 1,
+          "name": "Built in both years",
+          "color": "#8d99a6",
+          "pixels": 16089,
+          "area_ha": 160.89000000000107,
+          "share": 0.5734602224123102,
+          "share_aoi": 0.573460222412322
+        },
+        {
+          "value": 2,
+          "name": "New built area",
+          "color": "#d7301f",
+          "pixels": 1677,
+          "area_ha": 16.76999999999982,
+          "share": 0.05977331052181163,
+          "share_aoi": 0.05977331052181287
+        },
+        {
+          "value": 3,
+          "name": "Built area lost",
+          "color": "#2b83ba",
+          "pixels": 1117,
+          "area_ha": 11.16999999999992,
+          "share": 0.03981323068149305,
+          "share_aoi": 0.039813230681493866
+        }
+      ],
+      "summary": {}
+    }
+  ],
+  "deliverables": {
+    "directory": "piura_out/urban_expansion/deliverables",
+    "reports": {
+      "pdf": "piura_out/urban_expansion/deliverables/urban_expansion_report.pdf",
+      "xlsx": "piura_out/urban_expansion/deliverables/urban_expansion_report.xlsx",
+      "docx": "piura_out/urban_expansion/deliverables/urban_expansion_report.docx"
+    },
+    "maps": [
+      "piura_out/urban_expansion/deliverables/maps/urban_expansion_map.png"
+    ],
+    "charts": [
+      "piura_out/urban_expansion/deliverables/maps/urban_expansion_chart.png"
+    ],
+    "vectors": {
+      "gpkg": [
+        "piura_out/urban_expansion/deliverables/vectors/urban_expansion.gpkg"
+      ],
+      "geojson": [
+        "piura_out/urban_expansion/deliverables/vectors/geojson/urban_expansion_aoi.geojson"
+      ]
+    },
+    "summary_json": null,
+    "warnings": [
+      "vector layer 'built_change' could not be created: No module named 'scipy'"
+    ]
+  },
+  "deliverables_seconds": 0.62
+}
